@@ -1,0 +1,424 @@
+@media only screen and (max-width: 768px) {
+    .about_hero{
+        display: grid!important;
+        grid-template-columns: auto!important;
+    }
+}
+
+/* state container */
+.state-container{
+    padding: 106px 0 120px!important;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8)), url(../img/about-us-state-bg.jpg)!important;
+    background-size: cover!important;
+    background-position: center center!important;
+    background-attachment: fixed!important;
+    width: 100%!important;
+}
+.state-section{
+    display: grid!important;
+    /* grid-template-columns: auto auto auto auto!important; */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr))!important;
+    gap: 3%!important;
+}
+.state-box{
+    /* color: #00A3C8!important; */
+    color: #004861!important;
+    border-radius: 10px!important;
+    padding: 20px 0px 20px 0px!important;
+    background-color: #fff!important;
+}
+
+/* patient section */
+.patient-sec{
+    display: grid!important;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))!important;
+    gap: 10px!important;
+}
+.patient-review{
+    background: url('https://g-d.com/assets/quotation-marks.png')!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    background-size: 50%!important;
+}
+.patient-info{
+    border: 1px solid #eee!important;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: white;
+}
+
+.headerTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #004861;
+    padding: 10px 5%;
+}
+
+.headerTopText {
+    color: white;
+    letter-spacing: 1;
+    font-size: 16px;
+    margin: 0;
+}
+
+.left-column {
+    padding: 20px;
+}
+
+.right-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+
+    .left-column,
+    .right-column {
+        padding: 20px;
+    }
+}
+
+
+/* common css */
+.main_title {
+    text-transform: uppercase;
+    color: #00A3C8;
+}
+
+.sub_title {
+    color: #004861;
+}
+
+/* provide section */
+.provide_sec {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 3%;
+}
+
+.provide_content {
+    display: grid;
+    place-items: center;
+    row-gap: 20px;
+}
+
+@media only screen and (max-width:990px) {
+    .provide_sec {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .provide_sec {
+        grid-template-columns: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* about section */
+.about_sec {
+    grid-template-columns: 40% 60%;
+}
+
+.about_content {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.time_schedule h5 {
+    border-bottom: 2px solid #00A3C8;
+    color: #00A3C8;
+}
+
+.time_schedule {
+    width: 250px;
+}
+
+.timing h6 {
+    justify-content: space-evenly;
+}
+
+.about_img img,
+.appointment_img img {
+    width: 100%;
+    height: auto;
+}
+
+.timing p {
+    margin-bottom: 8px;
+}
+
+/* Appointment section  */
+.appointment_sec {
+    grid-template-columns: 60% 40%;
+}
+
+/* service */
+.service-content {
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.service_box {
+    display: grid;
+    place-items: center;
+    gap: 25px;
+}
+
+/* subscribe area */
+
+.subscribe-area .section-title {
+    margin-bottom: 30px;
+    z-index: 1;
+    position: relative;
+}
+
+.subscribe-form {
+    z-index: 1;
+    position: relative;
+}
+
+.subscribe-form input {
+    height: 60px;
+    width: 50%;
+    border-radius: 30px;
+    border: transparent;
+    position: relative;
+    margin-right: -35px;
+}
+
+.subscribe-form button {
+    position: absolute;
+    background: #00A3C8;
+    padding: 10px 38px;
+    margin-left: -126px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+/* doctor carousel */
+.doc_info p {
+    padding: 0px 60px 0px 60px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    padding: 11%;
+}
+
+/* footer */
+.footer-container {
+    grid-template-columns: 35% 21.66% 21.66% 21.66%;
+    column-gap: 10px;
+}
+
+/* back top */
+.back-top::after,
+.back-top::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #00A3C8;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0.8;
+    bottom: 8%;
+    right: 1px;
+}
+
+.back-top::before {
+    animation: notification 2s ease-out infinite;
+}
+
+.back-top::after {
+    animation: notification 2s 1.2s ease-out infinite;
+}
+
+
+/* login */
+.login-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes notification {
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+
+#back-top {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    display: none;
+    border-radius: 50%;
+    transition: 0.5;
+    background-color: #00A3C8;
+    display: flex;
+    justify-content: center;
+    color: white;
+    z-index: 111;
+}
+
+/* media query */
+
+@media only screen and (max-width:990px) {
+
+    .about_sec,
+    .appointment_sec {
+        grid-template-columns: auto;
+    }
+
+    .about_content {
+        grid-template-columns: auto auto;
+        margin-top: 5%;
+    }
+
+    .about_info {
+        padding: 10px 20px 0px 0px;
+    }
+
+    .about_img,
+    .appointment_img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about_img img {
+        width: 400px;
+        height: auto;
+    }
+
+    .time_schedule {
+        width: 200px;
+        height: fit-content;
+        margin-top: 20%;
+    }
+
+    .timing {
+        width: 200px;
+    }
+
+    /* appointment */
+    .appointment_img img {
+        width: 400px;
+        height: auto;
+    }
+
+    /* subscribe area */
+    .subscribe-form input {
+        height: 55px;
+        width: 75%;
+    }
+
+    .subscribe-form button {
+        padding: 8px 25px;
+        margin-left: -100px;
+    }
+
+    /* doctor carousel */
+    .doc_info p {
+        padding: 0px 30px 0px 30px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    /* appointment */
+    .appointment_img img {
+        width: 400px;
+        height: auto;
+    }
+
+    /* service */
+    .service-content {
+        grid-template-columns: auto;
+    }
+
+    /* doctor carousel */
+    .doc_info p {
+        padding: 0px 15px 0px 15px;
+    }
+
+    /* footer */
+    .footer-container {
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (max-width:595px) {
+
+    .about_content,
+    .appointment_content {
+        grid-template-columns: auto;
+        margin-top: 5%;
+    }
+
+    .time_schedule {
+        margin-top: 0%;
+        place-self: center;
+    }
+
+    .about_info {
+        padding: 10px 0px 0px 0px;
+    }
+
+    .doc_info {
+        padding: 0px;
+    }
+
+    /* appointment */
+    .appointment_img img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:460px) {
+    .about_img img {
+        width: 250px;
+        height: auto;
+    }
+
+    /* subscribe area */
+    .subscribe-form input {
+        height: 55px;
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .section-title h1 {
+        font-size: 25px;
+    }
+
+    .subscribe-form button {
+        padding: 8px 17px;
+        margin-left: -119px;
+    }
+
+    /* appointment sec */
+    .appointment_info p {
+        text-align: center;
+    }
+
+    .appointment_img img {
+        width: 200px;
+    }
+}
